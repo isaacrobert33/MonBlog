@@ -1,0 +1,16 @@
+.side-bar {
+    top: 4%;
+    right: 10%;
+    position: absolute;
+    background-color: rgb(180, 180, 180);
+    padding: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+a {
+    color: #00d0ff;
+    text-decoration: none;
+}
