@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static "css/main.css" %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="side-bar">
+            <h2><a href='{% url "blog:post_list" %}'>My Django Projects</a></h2>
+            <p>Kindly check the apps below</p>
+        </div>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
