@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
     'main.apps.MainConfig',
+    'account.apps.AccountConfig',
     'taggit',
     'django.contrib.sites', 
     'django.contrib.sitemaps',
@@ -138,3 +139,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST_USER = os.getenv("EMAIL_ID")
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
+
+# Login routes
+LOGIN_REDIRECT_URL = 'account:dashboard'
+LOGIN_URL = 'account:login'
+LOGOUT_URL = 'account:logout'

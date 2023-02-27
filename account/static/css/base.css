@@ -1,0 +1,74 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #0ecf52;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    margin: 0;
+    top: 0;
+}
+
+#navbar {
+    margin: 0;
+    position: absolute;
+    margin-left: 65%;
+    top: 15px;
+    width: 40%;
+}
+
+.user {
+    display: inline-block;
+    color: azure;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    display: inline-block;
+    color: azure;
+}
+
+#navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+    
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: azure;
+}
+
+#header .logo {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    top: 15px;
+    position: absolute;
+    color: azure;
+}
+
+#content {
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    background-color: lightgrey;
+    border: none;
+    height: 30px;
+}
+
+input[type="submit"] {
+    background-color: #0ecf52;
+    border: none;
+    padding: 8px;
+    color: white;
+}
