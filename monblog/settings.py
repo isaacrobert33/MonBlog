@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'taggit',
     'django.contrib.sites', 
     'django.contrib.sitemaps',
+    'restapi.apps.RestapiConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +62,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'monblog.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+      'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 TEMPLATES = [
     {
@@ -144,3 +152,7 @@ EMAIL_HOST_USER = os.getenv("EMAIL_ID")
 LOGIN_REDIRECT_URL = 'account:dashboard'
 LOGIN_URL = 'account:login'
 LOGOUT_URL = 'account:logout'
+
+# media dir
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
